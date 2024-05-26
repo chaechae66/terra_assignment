@@ -3,9 +3,23 @@ import "./Tooltip.scss";
 
 interface Props {
   children: ReactNode;
+  position?:
+    | "TL"
+    | "T"
+    | "TR"
+    | "LT"
+    | "L"
+    | "LB"
+    | "RT"
+    | "R"
+    | "RB"
+    | "BL"
+    | "B"
+    | "BR"
+    | null;
 }
 
-export function ToolTip({ children }: Props) {
+export function ToolTip({ position, children }: Props) {
   const [isHover, setIstHover] = useState(false);
   const handleMouseEnter = () => {
     setIstHover(true);
@@ -17,7 +31,11 @@ export function ToolTip({ children }: Props) {
   return (
     <div className="container">
       <div className="tooltip-wrap">
-        <div className={`message ${isHover ? "active" : ""}`}>
+        <div
+          className={`message ${isHover ? "active" : ""} ${
+            position ? position : "TL"
+          }`}
+        >
           Prompt Text
           <br />
           Prompt Text
