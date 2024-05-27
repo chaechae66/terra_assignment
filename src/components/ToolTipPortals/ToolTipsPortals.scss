@@ -15,16 +15,20 @@
   &.TR {
     transform: translate(-50%, -100%);
   }
-  &.LT,
-  &.L {
+  &.LT {
     transform: translate(-100%, 0);
+  }
+  &.L {
+    transform: translate(-100%, -50%);
   }
   &.LB {
     transform: translate(-100%, -100%);
   }
-  &.RT,
-  &.R {
+  &.RT {
     transform: translate(100%, 0);
+  }
+  &.R {
+    transform: translate(100%, -50%);
   }
   &.RB {
     transform: translate(100%, -100%);

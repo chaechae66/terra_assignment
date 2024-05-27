@@ -46,7 +46,7 @@ const ToolTipPortals = ({ children, targetRef, visible, position }: Props) => {
         return _top;
       case "L":
       case "R":
-        return _top - _height / 2;
+        return _top + _height / 2;
       case "LB":
       case "RB":
         return _top + _height;
