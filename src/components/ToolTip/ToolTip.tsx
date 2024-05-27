@@ -1,9 +1,10 @@
-import { ReactNode, useState } from "react";
+import { ReactNode, useRef, useState } from "react";
 import "./Tooltip.scss";
+import ToolTipPortals from "../ToolTipPortals/ToolTipPortals";
 
 interface Props {
   children: ReactNode;
-  position?:
+  position:
     | "TL"
     | "T"
     | "TR"
@@ -15,12 +16,13 @@ interface Props {
     | "RB"
     | "BL"
     | "B"
-    | "BR"
-    | null;
+    | "BR";
 }
 
 export function ToolTip({ position, children }: Props) {
   const [isHover, setIstHover] = useState(false);
+  const targetRef = useRef(null);
+
   const handleMouseEnter = () => {
     setIstHover(true);
   };
@@ -28,21 +30,24 @@ export function ToolTip({ position, children }: Props) {
   const handleMouseLeave = () => {
     setIstHover(false);
   };
+
+  console.log(position);
   return (
     <div className="container">
       <div className="tooltip-wrap">
-        <div
-          className={`message ${isHover ? "active" : ""} ${
-            position ? position : "TL"
-          }`}
+        <ToolTipPortals
+          position={position}
+          visible={isHover}
+          targetRef={targetRef}
         >
           Prompt Text
           <br />
           Prompt Text
           <br />
-          Prompt Text{" "}
-        </div>
+          Prompt Text
+        </ToolTipPortals>
         <div
+          ref={targetRef}
           className="content"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}

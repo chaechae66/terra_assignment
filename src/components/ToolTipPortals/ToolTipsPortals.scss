@@ -1,0 +1,117 @@
+.portals {
+  position: absolute;
+  transform: translate(-50%, 0);
+  z-index: 9999;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.TL,
+  &.T,
+  &.TR {
+    transform: translate(-50%, -100%);
+  }
+  &.LT,
+  &.L {
+    transform: translate(-100%, 0);
+  }
+  &.LB {
+    transform: translate(-100%, -100%);
+  }
+  &.RT,
+  &.R {
+    transform: translate(100%, 0);
+  }
+  &.RB {
+    transform: translate(100%, -100%);
+  }
+  &::before {
+    display: block;
+    transition: 0.3s;
+    position: absolute;
+    content: "";
+  }
+  &.TL::before,
+  &.T::before,
+  &.TR::before {
+    top: 100%;
+    border-top: 5px solid #000;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  }
+  &.TL::before {
+    left: 5%;
+  }
+  &.T::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &.TR::before {
+    right: 5%;
+  }
+  &.LT::before,
+  &.L::before,
+  &.LB::before {
+    right: 0;
+    transform: translateX(100%);
+    border-top: 5px solid transparent;
+    border-left: 5px solid #000;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  }
+  &.LT::before {
+    top: 8%;
+  }
+  &.L::before {
+    top: 50%;
+    transform: translate(100%, -50%);
+  }
+  &.LB::before {
+    bottom: 8%;
+  }
+  &.RT::before,
+  &.R::before,
+  &.RB::before {
+    left: 0;
+    transform: translateX(-100%);
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid #000;
+    border-bottom: 5px solid transparent;
+  }
+  &.RT::before {
+    top: 8%;
+  }
+  &.R::before {
+    top: 50%;
+    transform: translate(-100%, -50%);
+  }
+  &.RB::before {
+    bottom: 8%;
+  }
+  &.BL::before,
+  &.B::before,
+  &.BR::before {
+    top: 0;
+    transform: translateY(-100%);
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #000;
+  }
+  &.BL::before {
+    left: 5%;
+  }
+  &.B::before {
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+  &.BR::before {
+    right: 5%;
+  }
+}
