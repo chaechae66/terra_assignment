@@ -8,6 +8,9 @@ function App() {
         <div className="section">
           <div className="top-section">
             <ToolTip
+              enterDelay={0}
+              leaveDelay={0}
+              isHoverHidden={false}
               message={
                 <>
                   prompt text
@@ -22,6 +25,9 @@ function App() {
               <button className="button">TL</button>
             </ToolTip>
             <ToolTip
+              enterDelay={0}
+              leaveDelay={0}
+              isHoverHidden={false}
               message={
                 <>
                   prompt text
@@ -36,6 +42,9 @@ function App() {
               <button className="button">Top</button>
             </ToolTip>
             <ToolTip
+              enterDelay={0}
+              leaveDelay={0}
+              isHoverHidden={false}
               message={
                 <>
                   prompt text
@@ -53,6 +62,9 @@ function App() {
           <div className="vertical-section">
             <div className="left-section">
               <ToolTip
+                enterDelay={0}
+                leaveDelay={0}
+                isHoverHidden={false}
                 message={
                   <>
                     prompt text
@@ -67,6 +79,9 @@ function App() {
                 <button className="button">LT</button>
               </ToolTip>
               <ToolTip
+                enterDelay={0}
+                leaveDelay={0}
+                isHoverHidden={false}
                 message={
                   <>
                     prompt text
@@ -81,6 +96,9 @@ function App() {
                 <button className="button">Left</button>
               </ToolTip>
               <ToolTip
+                enterDelay={0}
+                leaveDelay={0}
+                isHoverHidden={false}
                 message={
                   <>
                     prompt text
@@ -97,6 +115,9 @@ function App() {
             </div>
             <div className="right-section">
               <ToolTip
+                enterDelay={0}
+                leaveDelay={0}
+                isHoverHidden={false}
                 message={
                   <>
                     prompt text
@@ -111,6 +132,9 @@ function App() {
                 <button className="button">RT</button>
               </ToolTip>
               <ToolTip
+                enterDelay={0}
+                leaveDelay={0}
+                isHoverHidden={false}
                 message={
                   <>
                     prompt text
@@ -125,6 +149,9 @@ function App() {
                 <button className="button">Right</button>
               </ToolTip>
               <ToolTip
+                enterDelay={0}
+                leaveDelay={0}
+                isHoverHidden={false}
                 message={
                   <>
                     prompt text
@@ -142,6 +169,9 @@ function App() {
           </div>
           <div className="bottom-section">
             <ToolTip
+              enterDelay={0}
+              leaveDelay={0}
+              isHoverHidden={false}
               message={
                 <>
                   prompt text
@@ -156,6 +186,9 @@ function App() {
               <button className="button">BL</button>
             </ToolTip>
             <ToolTip
+              enterDelay={0}
+              leaveDelay={0}
+              isHoverHidden={false}
               message={
                 <>
                   prompt text
@@ -170,6 +203,9 @@ function App() {
               <button className="button">Bottom</button>
             </ToolTip>
             <ToolTip
+              enterDelay={0}
+              leaveDelay={0}
+              isHoverHidden={false}
               message={
                 <>
                   prompt text
@@ -188,6 +224,9 @@ function App() {
         <div className="overflow-section">
           <div className="top-section">
             <ToolTip
+              enterDelay={0}
+              leaveDelay={0}
+              isHoverHidden={false}
               message={
                 <>
                   prompt text
@@ -202,6 +241,9 @@ function App() {
               <button className="button">TL</button>
             </ToolTip>
             <ToolTip
+              enterDelay={0}
+              leaveDelay={0}
+              isHoverHidden={false}
               message={
                 <>
                   prompt text
@@ -216,6 +258,9 @@ function App() {
               <button className="button">Top</button>
             </ToolTip>
             <ToolTip
+              enterDelay={0}
+              leaveDelay={0}
+              isHoverHidden={false}
               message={
                 <>
                   prompt text
@@ -233,6 +278,9 @@ function App() {
           <div className="vertical-section">
             <div className="left-section">
               <ToolTip
+                enterDelay={0}
+                leaveDelay={0}
+                isHoverHidden={false}
                 message={
                   <>
                     prompt text
@@ -247,6 +295,9 @@ function App() {
                 <button className="button">LT</button>
               </ToolTip>
               <ToolTip
+                enterDelay={0}
+                leaveDelay={0}
+                isHoverHidden={false}
                 message={
                   <>
                     prompt text
@@ -261,6 +312,9 @@ function App() {
                 <button className="button">Left</button>
               </ToolTip>
               <ToolTip
+                enterDelay={0}
+                leaveDelay={0}
+                isHoverHidden={false}
                 message={
                   <>
                     prompt text
@@ -277,6 +331,9 @@ function App() {
             </div>
             <div className="right-section">
               <ToolTip
+                enterDelay={0}
+                leaveDelay={0}
+                isHoverHidden={false}
                 message={
                   <>
                     prompt text
@@ -291,6 +348,9 @@ function App() {
                 <button className="button">RT</button>
               </ToolTip>
               <ToolTip
+                enterDelay={0}
+                leaveDelay={0}
+                isHoverHidden={false}
                 message={
                   <>
                     prompt text
@@ -305,6 +365,9 @@ function App() {
                 <button className="button">Right</button>
               </ToolTip>
               <ToolTip
+                enterDelay={0}
+                leaveDelay={0}
+                isHoverHidden={false}
                 message={
                   <>
                     prompt text
@@ -322,6 +385,9 @@ function App() {
           </div>
           <div className="bottom-section">
             <ToolTip
+              enterDelay={0}
+              leaveDelay={0}
+              isHoverHidden={false}
               message={
                 <>
                   prompt text
@@ -336,6 +402,9 @@ function App() {
               <button className="button">BL</button>
             </ToolTip>
             <ToolTip
+              enterDelay={0}
+              leaveDelay={0}
+              isHoverHidden={false}
               message={
                 <>
                   prompt text
@@ -350,6 +419,9 @@ function App() {
               <button className="button">Bottom</button>
             </ToolTip>
             <ToolTip
+              enterDelay={0}
+              leaveDelay={0}
+              isHoverHidden={false}
               message={
                 <>
                   prompt text
@@ -369,6 +441,9 @@ function App() {
       <div className="delay-data-type-wrap">
         <section className="delay-section">
           <ToolTip
+            enterDelay={0}
+            leaveDelay={0}
+            isHoverHidden={false}
             message={
               <>
                 prompt text
@@ -383,6 +458,9 @@ function App() {
             <button className="button">enter-delay 1s</button>
           </ToolTip>
           <ToolTip
+            enterDelay={0}
+            leaveDelay={0}
+            isHoverHidden={false}
             message={
               <>
                 prompt text
@@ -397,6 +475,9 @@ function App() {
             <button className="button">leave-delay 1s</button>
           </ToolTip>
           <ToolTip
+            enterDelay={0}
+            leaveDelay={0}
+            isHoverHidden={true}
             message={
               <>
                 prompt text
@@ -408,17 +489,32 @@ function App() {
             }
             position="TR"
           >
-            <button className="button">enter delay 1s</button>
+            <button className="button">hover not hidden</button>
           </ToolTip>
         </section>
         <section className="data-type-section">
-          <ToolTip message="string" position="TL">
+          <ToolTip
+            enterDelay={0}
+            leaveDelay={0}
+            isHoverHidden={false}
+            message="string"
+            position="TL"
+          >
             <button className="button">string</button>
           </ToolTip>
-          <ToolTip message={123} position="T">
+          <ToolTip
+            enterDelay={0}
+            leaveDelay={0}
+            isHoverHidden={false}
+            message={123}
+            position="T"
+          >
             <button className="button">number</button>
           </ToolTip>
           <ToolTip
+            enterDelay={0}
+            leaveDelay={0}
+            isHoverHidden={false}
             message={
               <>
                 <svg
@@ -439,6 +535,9 @@ function App() {
             <button className="button">icon</button>
           </ToolTip>
           <ToolTip
+            enterDelay={0}
+            leaveDelay={0}
+            isHoverHidden={false}
             message={
               <>
                 <svg
@@ -462,6 +561,9 @@ function App() {
         </section>
         <section className="button-section">
           <ToolTip
+            enterDelay={0}
+            leaveDelay={0}
+            isHoverHidden={true}
             message={
               <div className="message-outer">
                 <div className="message-inner">
@@ -492,6 +594,9 @@ function App() {
             <button className="button">클릭 가능한 button</button>
           </ToolTip>
           <ToolTip
+            enterDelay={0}
+            leaveDelay={0}
+            isHoverHidden={true}
             message={
               <div className="message-outer">
                 <div className="message-inner">
@@ -522,6 +627,9 @@ function App() {
             <button className="button">클릭 가능한 button</button>
           </ToolTip>
           <ToolTip
+            enterDelay={0}
+            leaveDelay={0}
+            isHoverHidden={true}
             message={
               <div className="message-outer">
                 <div className="message-inner">
@@ -552,6 +660,9 @@ function App() {
             <button className="button">클릭 가능한 button</button>
           </ToolTip>
           <ToolTip
+            enterDelay={0}
+            leaveDelay={0}
+            isHoverHidden={true}
             message={
               <div className="message-outer">
                 <div className="message-inner">
