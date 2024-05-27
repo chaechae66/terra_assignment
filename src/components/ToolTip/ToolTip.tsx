@@ -17,9 +17,10 @@ interface Props {
     | "BL"
     | "B"
     | "BR";
+  message: string | number | ReactNode;
 }
 
-export function ToolTip({ position, children }: Props) {
+export function ToolTip({ position, children, message }: Props) {
   const [isHover, setIstHover] = useState(false);
   const targetRef = useRef(null);
 
@@ -31,7 +32,6 @@ export function ToolTip({ position, children }: Props) {
     setIstHover(false);
   };
 
-  console.log(position);
   return (
     <div className="container">
       <div className="tooltip-wrap">
@@ -40,11 +40,7 @@ export function ToolTip({ position, children }: Props) {
           visible={isHover}
           targetRef={targetRef}
         >
-          Prompt Text
-          <br />
-          Prompt Text
-          <br />
-          Prompt Text
+          {message}
         </ToolTipPortals>
         <div
           ref={targetRef}
