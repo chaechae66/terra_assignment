@@ -2,9 +2,9 @@
   display: flex;
   & > .section,
   & > .overflow-section {
-    height: 300px;
     margin: 80px;
     margin-left: 150px;
+    margin-bottom: 40px;
     & > .vertical-section {
       display: flex;
       width: 510px;
@@ -26,21 +26,66 @@
     }
   }
 
-  .button {
-    background-color: cadetblue;
-    border: none;
-    width: 100px;
-    height: 25px;
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: #fff;
-  }
-
   & > .overflow-section {
     margin-left: 0;
     width: 400px;
     height: 100px;
     overflow-x: scroll;
     overflow-y: scroll;
+  }
+}
+
+.button {
+  background-color: cadetblue;
+  border: none;
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+.delay-data-type-wrap {
+  display: flex;
+  .delay-section {
+    margin-left: 150px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-between;
+    & .button {
+      width: 120px;
+    }
+  }
+  .data-type-section,
+  .button-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 150px;
+    margin-top: 40px;
+    margin-left: 100px;
+    justify-content: space-between;
+    & .button {
+      width: 150px;
+    }
+  }
+}
+
+.message-outer {
+  display: flex;
+  flex-direction: column;
+  & > button {
+    align-self: flex-end;
+  }
+  .message-inner {
+    display: flex;
+    width: 100%;
+    height: 65px;
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
 }
