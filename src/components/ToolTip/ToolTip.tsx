@@ -18,30 +18,55 @@ interface Props {
     | "B"
     | "BR";
   message: string | number | ReactNode;
+  enterDelay: number;
+  leaveDelay: number;
+  isHoverHidden: boolean;
 }
 
-export function ToolTip({ position, children, message }: Props) {
-  const [isHover, setIstHover] = useState(false);
-  const targetRef = useRef(null);
+export function ToolTip({
+  position,
+  children,
+  message,
+  enterDelay,
+  leaveDelay,
+  isHoverHidden,
+}: Props) {
+  const [isHover, setIsHover] = useState(false);
+  const targetRef = useRef<HTMLDivElement>(null);
+  const tooltipRef = useRef<HTMLDivElement>(null);
 
   const handleMouseEnter = () => {
-    setIstHover(true);
+    setIsHover(true);
   };
 
   const handleMouseLeave = () => {
-    setIstHover(false);
+    setIsHover(false);
+  };
+
+  const handleMessageMouseLeave = () => {
+    setIsHover(false);
   };
 
   return (
     <div className="container">
       <div className="tooltip-wrap">
-        <ToolTipPortals
-          position={position}
-          visible={isHover}
-          targetRef={targetRef}
+        <div
+          onMouseLeave={handleMessageMouseLeave}
+          ref={tooltipRef}
+          className="message"
         >
-          {message}
-        </ToolTipPortals>
+          <ToolTipPortals
+            position={position}
+            visible={isHover}
+            targetRef={targetRef}
+            enterDelay={enterDelay}
+            leaveDelay={leaveDelay}
+            isHoverHidden={isHoverHidden}
+            setIsHover={setIsHover}
+          >
+            {message}
+          </ToolTipPortals>
+        </div>
         <div
           ref={targetRef}
           className="content"

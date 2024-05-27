@@ -118,4 +118,7 @@
   &.BR::before {
     right: 5%;
   }
+  &.isHover {
+    display: flex;
+  }
 }

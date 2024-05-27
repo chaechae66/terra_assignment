@@ -10,3 +10,7 @@
     position: relative;
   }
 }
+
+.content:hover + .message {
+  display: block;
+}

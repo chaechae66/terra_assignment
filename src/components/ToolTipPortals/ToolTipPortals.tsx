@@ -21,9 +21,22 @@ interface Props {
   targetRef: RefObject<HTMLElement>;
   visible: boolean;
   position: position;
+  enterDelay: number;
+  leaveDelay: number;
+  isHoverHidden: boolean;
+  setIsHover: (p: boolean) => void;
 }
 
-const ToolTipPortals = ({ children, targetRef, visible, position }: Props) => {
+const ToolTipPortals = ({
+  children,
+  targetRef,
+  visible,
+  position,
+  enterDelay,
+  leaveDelay,
+  isHoverHidden,
+  setIsHover,
+}: Props) => {
   if (!targetRef.current || !visible) {
     return null;
   }
@@ -84,7 +97,16 @@ const ToolTipPortals = ({ children, targetRef, visible, position }: Props) => {
   };
 
   return ReactDOM.createPortal(
-    <div style={style} className={`portals ${position}`}>
+    <div
+      style={style}
+      className={`portals ${position} `}
+      onMouseEnter={() => {
+        isHoverHidden && setIsHover(true);
+      }}
+      onMouseLeave={() => {
+        isHoverHidden && setIsHover(false);
+      }}
+    >
       {children}
     </div>,
     document.body
