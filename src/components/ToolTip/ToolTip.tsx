@@ -34,13 +34,35 @@ export function ToolTip({
   const [isHover, setIsHover] = useState(false);
   const targetRef = useRef<HTMLDivElement>(null);
   const tooltipRef = useRef<HTMLDivElement>(null);
+  const enterTimeout = useRef<number | null>(null);
+  const leaveTimeout = useRef<number | null>(null);
 
   const handleMouseEnter = () => {
-    setIsHover(true);
+    if (enterDelay === 0) {
+      setIsHover(true);
+      return;
+    }
+    if (leaveTimeout.current) {
+      clearTimeout(leaveTimeout.current);
+      leaveTimeout.current = null;
+    }
+    enterTimeout.current = setTimeout(() => {
+      setIsHover(true);
+    }, enterDelay);
   };
 
   const handleMouseLeave = () => {
-    setIsHover(false);
+    if (leaveDelay === 0) {
+      setIsHover(false);
+      return;
+    }
+    if (enterTimeout.current) {
+      clearTimeout(enterTimeout.current);
+      enterTimeout.current = null;
+    }
+    leaveTimeout.current = setTimeout(() => {
+      setIsHover(false);
+    }, leaveDelay);
   };
 
   const handleMessageMouseLeave = () => {
@@ -59,8 +81,6 @@ export function ToolTip({
             position={position}
             visible={isHover}
             targetRef={targetRef}
-            enterDelay={enterDelay}
-            leaveDelay={leaveDelay}
             isHoverHidden={isHoverHidden}
             setIsHover={setIsHover}
           >

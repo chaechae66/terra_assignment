@@ -21,8 +21,6 @@ interface Props {
   targetRef: RefObject<HTMLElement>;
   visible: boolean;
   position: position;
-  enterDelay: number;
-  leaveDelay: number;
   isHoverHidden: boolean;
   setIsHover: (p: boolean) => void;
 }
@@ -32,8 +30,6 @@ const ToolTipPortals = ({
   targetRef,
   visible,
   position,
-  enterDelay,
-  leaveDelay,
   isHoverHidden,
   setIsHover,
 }: Props) => {

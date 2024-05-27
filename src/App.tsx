@@ -441,7 +441,7 @@ function App() {
       <div className="delay-data-type-wrap">
         <section className="delay-section">
           <ToolTip
-            enterDelay={0}
+            enterDelay={1000}
             leaveDelay={0}
             isHoverHidden={false}
             message={
@@ -459,7 +459,7 @@ function App() {
           </ToolTip>
           <ToolTip
             enterDelay={0}
-            leaveDelay={0}
+            leaveDelay={1000}
             isHoverHidden={false}
             message={
               <>
