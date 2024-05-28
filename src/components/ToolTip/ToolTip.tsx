@@ -21,6 +21,8 @@ interface Props {
   enterDelay: number;
   leaveDelay: number;
   isHoverHidden: boolean;
+  bgColor: string;
+  disabled: boolean;
 }
 
 export function ToolTip({
@@ -30,6 +32,8 @@ export function ToolTip({
   enterDelay,
   leaveDelay,
   isHoverHidden,
+  bgColor,
+  disabled,
 }: Props) {
   const [isHover, setIsHover] = useState(false);
   const targetRef = useRef<HTMLDivElement>(null);
@@ -43,10 +47,10 @@ export function ToolTip({
       leaveTimeout.current = null;
     }
     if (enterDelay === 0) {
-      setIsHover(true);
+      !disabled && setIsHover(true);
     } else {
       enterTimeout.current = setTimeout(() => {
-        setIsHover(true);
+        !disabled && setIsHover(true);
       }, enterDelay);
     }
   };
@@ -57,16 +61,16 @@ export function ToolTip({
       enterTimeout.current = null;
     }
     if (leaveDelay === 0) {
-      setIsHover(false);
+      !disabled && setIsHover(false);
     } else {
       leaveTimeout.current = setTimeout(() => {
-        setIsHover(false);
+        !disabled && setIsHover(false);
       }, leaveDelay);
     }
   };
 
   const handleMessageMouseLeave = () => {
-    setIsHover(false);
+    !disabled && setIsHover(false);
   };
 
   return (
@@ -83,6 +87,7 @@ export function ToolTip({
             targetRef={targetRef}
             isHoverHidden={isHoverHidden}
             setIsHover={setIsHover}
+            bgColor={bgColor}
           >
             {message}
           </ToolTipPortals>

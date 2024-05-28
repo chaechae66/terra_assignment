@@ -23,6 +23,7 @@ interface Props {
   position: position;
   isHoverHidden: boolean;
   setIsHover: (p: boolean) => void;
+  bgColor: string;
 }
 
 const ToolTipPortals = ({
@@ -32,6 +33,7 @@ const ToolTipPortals = ({
   position,
   isHoverHidden,
   setIsHover,
+  bgColor,
 }: Props) => {
   if (!targetRef.current || !visible) {
     return null;
@@ -90,12 +92,13 @@ const ToolTipPortals = ({
     top: getXPosition(position, top, height),
     left: getYposition(position, left, width),
     width: width,
+    backgroundColor: bgColor,
   };
 
   return ReactDOM.createPortal(
     <div
       style={style}
-      className={`portals ${position} `}
+      className={`portals ${position}`}
       onMouseEnter={() => {
         isHoverHidden && setIsHover(true);
       }}
