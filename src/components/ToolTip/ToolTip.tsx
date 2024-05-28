@@ -38,31 +38,31 @@ export function ToolTip({
   const leaveTimeout = useRef<number | null>(null);
 
   const handleMouseEnter = () => {
-    if (enterDelay === 0) {
-      setIsHover(true);
-      return;
-    }
     if (leaveTimeout.current) {
       clearTimeout(leaveTimeout.current);
       leaveTimeout.current = null;
     }
-    enterTimeout.current = setTimeout(() => {
+    if (enterDelay === 0) {
       setIsHover(true);
-    }, enterDelay);
+    } else {
+      enterTimeout.current = setTimeout(() => {
+        setIsHover(true);
+      }, enterDelay);
+    }
   };
 
   const handleMouseLeave = () => {
-    if (leaveDelay === 0) {
-      setIsHover(false);
-      return;
-    }
     if (enterTimeout.current) {
       clearTimeout(enterTimeout.current);
       enterTimeout.current = null;
     }
-    leaveTimeout.current = setTimeout(() => {
+    if (leaveDelay === 0) {
       setIsHover(false);
-    }, leaveDelay);
+    } else {
+      leaveTimeout.current = setTimeout(() => {
+        setIsHover(false);
+      }, leaveDelay);
+    }
   };
 
   const handleMessageMouseLeave = () => {
