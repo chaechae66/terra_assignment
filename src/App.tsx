@@ -8,6 +8,7 @@ function App() {
         <div className="section">
           <div className="top-section">
             <ToolTip
+              disabled={false}
               enterDelay={0}
               leaveDelay={0}
               isHoverHidden={false}
@@ -21,10 +22,12 @@ function App() {
                 </>
               }
               position={"TL"}
+              bgColor="#000"
             >
               <button className="button">TL</button>
             </ToolTip>
             <ToolTip
+              disabled={false}
               enterDelay={0}
               leaveDelay={0}
               isHoverHidden={false}
@@ -38,10 +41,12 @@ function App() {
                 </>
               }
               position={"T"}
+              bgColor="#000"
             >
               <button className="button">Top</button>
             </ToolTip>
             <ToolTip
+              disabled={false}
               enterDelay={0}
               leaveDelay={0}
               isHoverHidden={false}
@@ -55,6 +60,7 @@ function App() {
                 </>
               }
               position={"TR"}
+              bgColor="#000"
             >
               <button className="button">TR</button>
             </ToolTip>
@@ -62,6 +68,7 @@ function App() {
           <div className="vertical-section">
             <div className="left-section">
               <ToolTip
+                disabled={false}
                 enterDelay={0}
                 leaveDelay={0}
                 isHoverHidden={false}
@@ -75,10 +82,12 @@ function App() {
                   </>
                 }
                 position={"LT"}
+                bgColor="#000"
               >
                 <button className="button">LT</button>
               </ToolTip>
               <ToolTip
+                disabled={false}
                 enterDelay={0}
                 leaveDelay={0}
                 isHoverHidden={false}
@@ -92,10 +101,12 @@ function App() {
                   </>
                 }
                 position={"L"}
+                bgColor="#000"
               >
                 <button className="button">Left</button>
               </ToolTip>
               <ToolTip
+                disabled={false}
                 enterDelay={0}
                 leaveDelay={0}
                 isHoverHidden={false}
@@ -109,12 +120,14 @@ function App() {
                   </>
                 }
                 position={"LB"}
+                bgColor="#000"
               >
                 <button className="button">LB</button>
               </ToolTip>
             </div>
             <div className="right-section">
               <ToolTip
+                disabled={false}
                 enterDelay={0}
                 leaveDelay={0}
                 isHoverHidden={false}
@@ -128,10 +141,12 @@ function App() {
                   </>
                 }
                 position={"RT"}
+                bgColor="#000"
               >
                 <button className="button">RT</button>
               </ToolTip>
               <ToolTip
+                disabled={false}
                 enterDelay={0}
                 leaveDelay={0}
                 isHoverHidden={false}
@@ -145,10 +160,12 @@ function App() {
                   </>
                 }
                 position={"R"}
+                bgColor="#000"
               >
                 <button className="button">Right</button>
               </ToolTip>
               <ToolTip
+                disabled={false}
                 enterDelay={0}
                 leaveDelay={0}
                 isHoverHidden={false}
@@ -162,6 +179,7 @@ function App() {
                   </>
                 }
                 position={"RB"}
+                bgColor="#000"
               >
                 <button className="button">RB</button>
               </ToolTip>
@@ -169,6 +187,7 @@ function App() {
           </div>
           <div className="bottom-section">
             <ToolTip
+              disabled={false}
               enterDelay={0}
               leaveDelay={0}
               isHoverHidden={false}
@@ -182,10 +201,12 @@ function App() {
                 </>
               }
               position={"BL"}
+              bgColor="#000"
             >
               <button className="button">BL</button>
             </ToolTip>
             <ToolTip
+              disabled={false}
               enterDelay={0}
               leaveDelay={0}
               isHoverHidden={false}
@@ -199,10 +220,12 @@ function App() {
                 </>
               }
               position={"B"}
+              bgColor="#000"
             >
               <button className="button">Bottom</button>
             </ToolTip>
             <ToolTip
+              disabled={false}
               enterDelay={0}
               leaveDelay={0}
               isHoverHidden={false}
@@ -216,6 +239,7 @@ function App() {
                 </>
               }
               position={"BR"}
+              bgColor="#000"
             >
               <button className="button">BR</button>
             </ToolTip>
@@ -224,6 +248,7 @@ function App() {
         <div className="overflow-section">
           <div className="top-section">
             <ToolTip
+              disabled={false}
               enterDelay={0}
               leaveDelay={0}
               isHoverHidden={false}
@@ -237,10 +262,12 @@ function App() {
                 </>
               }
               position={"TL"}
+              bgColor="#000"
             >
               <button className="button">TL</button>
             </ToolTip>
             <ToolTip
+              disabled={false}
               enterDelay={0}
               leaveDelay={0}
               isHoverHidden={false}
@@ -254,10 +281,12 @@ function App() {
                 </>
               }
               position={"T"}
+              bgColor="#000"
             >
               <button className="button">Top</button>
             </ToolTip>
             <ToolTip
+              disabled={false}
               enterDelay={0}
               leaveDelay={0}
               isHoverHidden={false}
@@ -271,6 +300,7 @@ function App() {
                 </>
               }
               position={"TR"}
+              bgColor="#000"
             >
               <button className="button">TR</button>
             </ToolTip>
@@ -278,6 +308,7 @@ function App() {
           <div className="vertical-section">
             <div className="left-section">
               <ToolTip
+                disabled={false}
                 enterDelay={0}
                 leaveDelay={0}
                 isHoverHidden={false}
@@ -291,10 +322,12 @@ function App() {
                   </>
                 }
                 position={"LT"}
+                bgColor="#000"
               >
                 <button className="button">LT</button>
               </ToolTip>
               <ToolTip
+                disabled={false}
                 enterDelay={0}
                 leaveDelay={0}
                 isHoverHidden={false}
@@ -308,10 +341,12 @@ function App() {
                   </>
                 }
                 position={"L"}
+                bgColor="#000"
               >
                 <button className="button">Left</button>
               </ToolTip>
               <ToolTip
+                disabled={false}
                 enterDelay={0}
                 leaveDelay={0}
                 isHoverHidden={false}
@@ -325,12 +360,14 @@ function App() {
                   </>
                 }
                 position={"LB"}
+                bgColor="#000"
               >
                 <button className="button">LB</button>
               </ToolTip>
             </div>
             <div className="right-section">
               <ToolTip
+                disabled={false}
                 enterDelay={0}
                 leaveDelay={0}
                 isHoverHidden={false}
@@ -344,10 +381,12 @@ function App() {
                   </>
                 }
                 position={"RT"}
+                bgColor="#000"
               >
                 <button className="button">RT</button>
               </ToolTip>
               <ToolTip
+                disabled={false}
                 enterDelay={0}
                 leaveDelay={0}
                 isHoverHidden={false}
@@ -361,10 +400,12 @@ function App() {
                   </>
                 }
                 position={"R"}
+                bgColor="#000"
               >
                 <button className="button">Right</button>
               </ToolTip>
               <ToolTip
+                disabled={false}
                 enterDelay={0}
                 leaveDelay={0}
                 isHoverHidden={false}
@@ -378,6 +419,7 @@ function App() {
                   </>
                 }
                 position={"RB"}
+                bgColor="#000"
               >
                 <button className="button">RB</button>
               </ToolTip>
@@ -385,6 +427,7 @@ function App() {
           </div>
           <div className="bottom-section">
             <ToolTip
+              disabled={false}
               enterDelay={0}
               leaveDelay={0}
               isHoverHidden={false}
@@ -398,10 +441,12 @@ function App() {
                 </>
               }
               position={"BL"}
+              bgColor="#000"
             >
               <button className="button">BL</button>
             </ToolTip>
             <ToolTip
+              disabled={false}
               enterDelay={0}
               leaveDelay={0}
               isHoverHidden={false}
@@ -415,10 +460,12 @@ function App() {
                 </>
               }
               position={"B"}
+              bgColor="#000"
             >
               <button className="button">Bottom</button>
             </ToolTip>
             <ToolTip
+              disabled={false}
               enterDelay={0}
               leaveDelay={0}
               isHoverHidden={false}
@@ -432,6 +479,7 @@ function App() {
                 </>
               }
               position={"BR"}
+              bgColor="#000"
             >
               <button className="button">BR</button>
             </ToolTip>
@@ -441,6 +489,7 @@ function App() {
       <div className="delay-data-type-wrap">
         <section className="delay-section">
           <ToolTip
+            disabled={false}
             enterDelay={1000}
             leaveDelay={0}
             isHoverHidden={false}
@@ -454,10 +503,12 @@ function App() {
               </>
             }
             position="TL"
+            bgColor="#000"
           >
             <button className="button">enter-delay 1s</button>
           </ToolTip>
           <ToolTip
+            disabled={false}
             enterDelay={0}
             leaveDelay={1000}
             isHoverHidden={false}
@@ -471,10 +522,12 @@ function App() {
               </>
             }
             position="T"
+            bgColor="#000"
           >
             <button className="button">leave-delay 1s</button>
           </ToolTip>
           <ToolTip
+            disabled={false}
             enterDelay={0}
             leaveDelay={0}
             isHoverHidden={true}
@@ -488,30 +541,36 @@ function App() {
               </>
             }
             position="TR"
+            bgColor="#000"
           >
             <button className="button">hover not hidden</button>
           </ToolTip>
         </section>
         <section className="data-type-section">
           <ToolTip
+            disabled={false}
             enterDelay={0}
             leaveDelay={0}
             isHoverHidden={false}
             message="string"
             position="TL"
+            bgColor="#000"
           >
             <button className="button">string</button>
           </ToolTip>
           <ToolTip
+            disabled={false}
             enterDelay={0}
             leaveDelay={0}
             isHoverHidden={false}
             message={123}
             position="T"
+            bgColor="#000"
           >
             <button className="button">number</button>
           </ToolTip>
           <ToolTip
+            disabled={false}
             enterDelay={0}
             leaveDelay={0}
             isHoverHidden={false}
@@ -531,10 +590,12 @@ function App() {
               </>
             }
             position="TR"
+            bgColor="#000"
           >
             <button className="button">icon</button>
           </ToolTip>
           <ToolTip
+            disabled={false}
             enterDelay={0}
             leaveDelay={0}
             isHoverHidden={false}
@@ -555,12 +616,14 @@ function App() {
               </>
             }
             position="B"
+            bgColor="#000"
           >
             <button className="button">icon & string</button>
           </ToolTip>
         </section>
         <section className="button-section">
           <ToolTip
+            disabled={false}
             enterDelay={0}
             leaveDelay={0}
             isHoverHidden={true}
@@ -590,10 +653,12 @@ function App() {
               </div>
             }
             position="T"
+            bgColor="#000"
           >
             <button className="button">클릭 가능한 button</button>
           </ToolTip>
           <ToolTip
+            disabled={false}
             enterDelay={0}
             leaveDelay={0}
             isHoverHidden={true}
@@ -623,10 +688,12 @@ function App() {
               </div>
             }
             position="L"
+            bgColor="#000"
           >
             <button className="button">클릭 가능한 button</button>
           </ToolTip>
           <ToolTip
+            disabled={false}
             enterDelay={0}
             leaveDelay={0}
             isHoverHidden={true}
@@ -656,10 +723,12 @@ function App() {
               </div>
             }
             position="R"
+            bgColor="#000"
           >
             <button className="button">클릭 가능한 button</button>
           </ToolTip>
           <ToolTip
+            disabled={false}
             enterDelay={0}
             leaveDelay={0}
             isHoverHidden={true}
@@ -689,11 +758,64 @@ function App() {
               </div>
             }
             position="B"
+            bgColor="#000"
           >
             <button className="button">클릭 가능한 button</button>
           </ToolTip>
         </section>
       </div>
+      <section className="color-section">
+        <ToolTip
+          disabled={false}
+          enterDelay={0}
+          leaveDelay={0}
+          isHoverHidden={false}
+          message={"Pink"}
+          position="T"
+          bgColor="pink"
+        >
+          <button className="button pink">Pink</button>
+        </ToolTip>
+        <ToolTip
+          disabled={false}
+          enterDelay={0}
+          leaveDelay={0}
+          isHoverHidden={false}
+          message={"Yellow"}
+          position="T"
+          bgColor="#edcc16"
+        >
+          <button className="button yellow">Yellow</button>
+        </ToolTip>
+      </section>
+      <section className="custom-section">
+        <ToolTip
+          disabled={true}
+          enterDelay={0}
+          leaveDelay={0}
+          isHoverHidden={false}
+          message={"Disabled"}
+          position="T"
+          bgColor="#000"
+        >
+          <button className="button disabled">Disabled</button>
+        </ToolTip>
+        <ToolTip
+          disabled={false}
+          enterDelay={0}
+          leaveDelay={0}
+          isHoverHidden={false}
+          message={`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+        asperiores atque`}
+          position="T"
+          bgColor="#000"
+        >
+          <button className="button long-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+            asperiores atque
+          </button>
+        </ToolTip>
+      </section>
     </>
   );
 }
